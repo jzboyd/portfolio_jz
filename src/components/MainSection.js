@@ -16,7 +16,7 @@ function MainSection() {
                 buttonStyle='btn--outline' 
                 buttonSize='btn--large'
                 >
-                   PORTFOLIO 
+                   PROJECTS 
                 </Button>
                 <Button 
                 className='btns' 

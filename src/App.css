@@ -6,9 +6,9 @@
 }
 
 .home,
-.services,
-.products,
-.sign-up {
+.projects,
+.skills,
+.contact {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -16,7 +16,7 @@
   font-size: 3rem;
 }
 
-.services {
+.projects {
   /* background-image: url('/images/img-2.jpg'); */
   background-position: center;
   background-size: cover;
@@ -25,7 +25,7 @@
   font-size: 100px;
 }
 
-.products {
+.skills {
   /* background-image: url('/images/img-1.jpg'); */
   background-position: center;
   background-size: fill;
@@ -34,7 +34,7 @@
   font-size: 100px;
 }
 
-.sign-up {
+.contact {
   /* background-image: url('/images/img-8.jpg'); */
   background-position: center;
   background-size: cover;

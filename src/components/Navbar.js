@@ -31,10 +31,10 @@ window.addEventListener('resize', showButton);
           <nav className="navbar">
               <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                    JOEL ZISHOLTZ <i className="fas fa-code"></i>
+                    Joel Zisholtz <i className="fas fa-code"></i>
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
-                    <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                    <i className={click ? 'fas fa-times' : 'fas fa-server'} />
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li className='nav-item'>
@@ -43,22 +43,22 @@ window.addEventListener('resize', showButton);
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                        Services
+                    <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+                        Projects
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                        Products
+                    <Link to='/skills' className='nav-links' onClick={closeMobileMenu}>
+                        Skills
                     </Link>
                 </li>
                 <li className='nav-item'>
                     <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
-                        Sign Up
+                        Contact
                     </Link>
                 </li>
                 </ul>
-                {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                {button && <Button buttonStyle='btn--outline'>Contact</Button>}
               </div>
           </nav>
         </>
