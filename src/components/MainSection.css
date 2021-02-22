@@ -1,35 +1,41 @@
 .main-container {
-    background-image: url('../images/portfoliobg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-image: url('../images/engineer.png');
+    background-size: center;
+    background-repeat: no-repeat; */
+  
     height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
     object-fit: contain;
 }
 
-.main-container > h1 {
-    color: #fff;
+
+.info-container > h1 {
+    color: rgb(0, 0, 0);
     font-size: 100px;
-    margin-top: -100px;
+    margin-top: -55px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow: rgb(0, 0, 0) 20px 0 10px;
+    
 }
 
-.main-container > p {
-    margin-top: 8px;
-    color: #fff;
+.info-container > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    color: rgb(0, 0, 0);
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow: rgb(0, 0, 0) 20px 0 10px;
 }
 
 .main-btns {
     margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-btns .btn {
@@ -39,13 +45,63 @@
 .main-social-icons {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 120px;
+    justify-content: center;
+    
+   
 }
 
   /* Social Icons */
   .main-social-icon-link {
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 54px;
+    padding: 20px;
+  }
+
+.first-img img{
+    height: 700px;
+    margin-bottom: 50px;
+    
+}
+
+@media screen and (max-width: 960px) {
+    .main-container {
+      font-size: 70px;
+      margin-top: 150px;
+      margin-bottom: 150px;
+      height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .main-container{
+      font-size: 50px;
+      margin-top: 150px;
+      margin-bottom: 150px;
+      height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    }
+  
+    .main-container > p {
+      font-size: 30px;
+    }
+  
+    .btn-mobile {
+      display: block;
+      text-decoration: none;
+    }
+  
+    .btn {
+      width: 100%;
+    }
   }

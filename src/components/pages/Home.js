@@ -9,8 +9,8 @@ function Home () {
     return (
         <>
         <MainSection />
-        <Cards />
         <Skills />
+        <Cards />
         <Footer />
         </>
     )

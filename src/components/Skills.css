@@ -1,42 +1,57 @@
-.skills_cards {
-    padding: 4rem;
-    
-  }
+.skills-container {
+  height: 175vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  margin-top: 100px;
+}
+
+
+.skills-frontend h2 {
+  align-items: center;
+  justify-content: center;
+}
+
+.frontend-img img{
+  height: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.backend-img img{
+  height: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   
-  h1 {
-    text-align: center;
-  }
+}
+.mobile-img img{
+  height: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   
-  .skills_cards__container {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    max-width: 1120px;
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .skills_cards__wrapper {
-    position: relative;
-    margin: 50px 0 45px;
-  }
-  
+}
   
   
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
+      margin-top: 70px;
       width: 84%;
     }
   }
   
   @media only screen and (min-width: 1024px) {
     .cards__items {
+      margin-top: 70px;
       display: flex;
     }
   }
   
   @media only screen and (max-width: 1024px) {
     .cards__item {
+      margin-top: 70px;
       margin-bottom: 2rem;
     }
   }
