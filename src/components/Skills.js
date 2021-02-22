@@ -7,13 +7,21 @@ import './Skills.css';
 
 function Skills() {
     return (
-        <div className='skills-container'>
-            <h1>Skills</h1>
+      <>
+      <div className='skills-header'>
+          <h1>Skills</h1>
+          </div>
+        {/* <div className='skills-container'> */}
+          
+            
             <div className='skills-frontend'>
-                <h2>Front-End UX/UI Development</h2>
+              <div className='frontend-header'></div>
+            <h2>Front-End Development</h2>
+                <div className='img-language'>
             <div class="frontend-img">
                 <img src={frontend} alt="front-end" />
               </div>
+             
               <div className="languages">
               <i class="devicon-javascript-plain colored"></i>
               <i class="devicon-html5-plain-wordmark colored"></i>
@@ -28,6 +36,7 @@ function Skills() {
               <i class="devicon-illustrator-line colored"></i>
 
               </div>
+            </div>
             </div>
             <div className='skills-backend'>
             <h2>Back-End Development</h2>
@@ -87,8 +96,8 @@ function Skills() {
               </div>
             </div>
             
-            </div>
-        
+            {/* </div> */}
+        </>
     )
 }
 
