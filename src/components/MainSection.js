@@ -7,7 +7,7 @@ import engineer from '../images/engineer.png';
 
 
 const toggleProjects = () => {
-    scroll.scrollTo(900)
+    scroll.scrollTo(2975)
 }
 
 function MainSection() {

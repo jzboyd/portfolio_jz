@@ -30,7 +30,7 @@ useEffect(() => {
 }, []);
 
 const toggleProjects = () => {
-    scroll.scrollTo(900)
+    scroll.scrollTo(2975)
 }
 
 window.addEventListener('resize', showButton);

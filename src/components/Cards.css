@@ -1,6 +1,7 @@
 .cards {
     padding: 4rem;
     background: #fff;
+    border: #000000;
   }
   
   h1 {
@@ -37,9 +38,11 @@
     display: flex;
     flex-flow: column;
     width: 100%;
-    box-shadow: 0 6px 20px rgb(0, 0, 0);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(163, 163, 163, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(105, 105, 105, 0.017));
+    border: 10px solid black;
+   
+    /* box-shadow: 0 6px 20px rgb(0, 0, 0); */
+    /* -webkit-filter: drop-shadow(0 6px 20px rgba(163, 163, 163, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(105, 105, 105, 0.017)); */
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
