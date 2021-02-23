@@ -17,26 +17,29 @@
 .skills-frontend {
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
+  margin-top: 40px;
+  margin-bottom: 100px;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 
 .frontend-header {
+  font-size: 25px;
+  margin-bottom: 30px;
   align-items: center;
   justify-content: center;
 }
 
-.img-language {
+.frontend-img-language {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: center
+  justify-content: center;
 }
 
-.languages {
-  font-size: 60px;
+.frontend-languages {
+  font-size: 55px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,23 +47,104 @@
   
 }
 
+.frontend-languages i {
+  padding: 10px;
+}
+
 .frontend-img img {
-  height: 500px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  height: 600px;
+  margin-top: 20px;
   margin-right: 300px;
 }
 
+.skills-backend {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.backend-header {
+  font-size: 25px;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.backend-img-language {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: center;
+}
+
+.backend-languages {
+  font-size: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.backend-languages i {
+  padding: 10px;
+}
+
 .backend-img img {
-  height: 400px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  height: 600px;
+  margin-top: 20px;
+  margin-left: 300px;
 }
+
+.skills-mobile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-header {
+  font-size: 25px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-img-language {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center
+}
+
+.mobile-languages {
+  font-size: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.mobile-languages i {
+  padding: 10px;
+}
+
 .mobile-img img {
-  height: 500px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  height: 620px;
+  margin-top: 20px;
+  margin-right: 300px;
 }
+
+
+
 
 @media only screen and (min-width: 1200px) {
   .content__blog__container {

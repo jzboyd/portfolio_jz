@@ -4,10 +4,15 @@ import { Button } from './Button';
 import './MainSection.css';
 import { animateScroll as scroll } from "react-scroll";
 import engineer from '../images/engineer.png';
+import profile from "../images/profilepic.jpeg";
 
 
 const toggleProjects = () => {
-    scroll.scrollTo(2975)
+    scroll.scrollTo(3700)
+}
+
+const toggleFrontend = () => {
+    scroll.scrollTo(3700)
 }
 
 function MainSection() {
@@ -16,6 +21,8 @@ function MainSection() {
             <div className='info-container'>
             <h1>Software Engineer</h1>
             <p>Joel Zisholtz</p>
+            <img src={profile} alt="profile-pic" />
+           
             
             <div className="main-btns">
                 <Button 
@@ -31,6 +38,15 @@ function MainSection() {
                 buttonStyle='btn--primary' 
                 buttonSize='btn--large'
                 >Resume</Button>
+            
+            </div>
+            <div className="sub-btns">
+                <Button 
+                onClick={toggleFrontend}
+                className='btn' 
+                buttonStyle='btn--outline' 
+                buttonSize='btn--large'
+                >Front-End Development</Button>
             </div>
             <div class='main-social-icons'>
             <a

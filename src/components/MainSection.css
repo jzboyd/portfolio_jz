@@ -1,8 +1,4 @@
 .main-container {
-    /* background-image: url('../images/engineer.png');
-    background-size: center;
-    background-repeat: no-repeat; */
-  
     height: 100vh;
     width: 100%;
     display: flex;
@@ -31,15 +27,40 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.info-container > img {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 150px;
+}
+
 .main-btns {
     margin-top: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .main-btns .btn {
     margin: 9px;
+    border-radius: 10px;
+}
+
+.sub-btns {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-btns .btn {
+  margin: 9px;
+  border-radius: 10px;
 }
 
 .main-social-icons {
