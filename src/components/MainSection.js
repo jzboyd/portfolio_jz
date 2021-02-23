@@ -15,6 +15,14 @@ const toggleFrontend = () => {
     scroll.scrollTo(3700)
 }
 
+const toggleBackend = () => {
+    scroll.scrollTo(3700)
+}
+
+const toggleMobile = () => {
+    scroll.scrollTo(3700)
+}
+
 function MainSection() {
     return (
         <div className='main-container'>
@@ -47,7 +55,21 @@ function MainSection() {
                 buttonStyle='btn--outline' 
                 buttonSize='btn--large'
                 >Front-End Development</Button>
+                <Button 
+                onClick={toggleBackend}
+                className='btn' 
+                buttonStyle='btn--outline' 
+                buttonSize='btn--large'
+                >Back-End Development</Button>
+                <Button 
+                onClick={toggleMobile}
+                className='btn' 
+                buttonStyle='btn--outline' 
+                buttonSize='btn--large'
+                >Mobile Development</Button>
             </div>
+         
+           
             <div class='main-social-icons'>
             <a
                 target="_blank"
