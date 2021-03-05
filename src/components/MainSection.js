@@ -30,7 +30,25 @@ function MainSection() {
             <h1>Software Engineer</h1>
             <p>Joel Zisholtz</p>
             <img src={profile} alt="profile-pic" />
-           
+            <div class='main-social-icons'>
+            <a
+                target="_blank"
+                href="https://www.linkedin.com/in/joelzisholtz/"
+                class="main-social-icon-link linkedin"
+                aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin" />
+              </a> 
+            <a
+                target="_blank"
+                href="https://github.com/jzboyd"
+                class="main-social-icon-link github"
+                aria-label="Github"
+                >
+                  <i class="fab fa-github" />
+              </a>
+            
+          </div>
             
             <div className="main-btns">
                 <Button 
@@ -54,41 +72,23 @@ function MainSection() {
                 className='btn' 
                 buttonStyle='btn--outline' 
                 buttonSize='btn--large'
-                >Front-End Development</Button>
+                >Front-End</Button>
                 <Button 
                 onClick={toggleBackend}
                 className='btn' 
                 buttonStyle='btn--outline' 
                 buttonSize='btn--large'
-                >Back-End Development</Button>
+                >Back-End</Button>
                 <Button 
                 onClick={toggleMobile}
                 className='btn' 
                 buttonStyle='btn--outline' 
                 buttonSize='btn--large'
-                >Mobile Development</Button>
+                >Mobile</Button>
             </div>
          
            
-            <div class='main-social-icons'>
-            <a
-                target="_blank"
-                href="https://www.linkedin.com/in/joelzisholtz/"
-                class="main-social-icon-link linkedin"
-                aria-label="LinkedIn"
-                >
-                  <i class="fab fa-linkedin" />
-              </a> 
-            <a
-                target="_blank"
-                href="https://github.com/jzboyd"
-                class="main-social-icon-link github"
-                aria-label="Github"
-                >
-                  <i class="fab fa-github" />
-              </a>
-            
-          </div>
+           
           </div>
           <div class="first-img">
                 <img src={engineer} alt="engineer" />

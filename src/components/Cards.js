@@ -23,7 +23,7 @@ function Cards() {
                       path='/services'
                       /> 
                     </ul>
-                    <ul className="cards__items">
+                    {/* <ul className="cards__items">
                       <CardItem
                       src="mages/img-9.jpg"
                       text="Project Description" 
@@ -42,7 +42,7 @@ function Cards() {
                       label='ESTORE'
                       path='/services'
                       /> 
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
         </div>

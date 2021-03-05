@@ -40,7 +40,9 @@ window.addEventListener('resize', showButton);
           <nav className="navbar">
               <div className="navbar-container">
                 <Link to="/" onClick={toggleHome} className="navbar-logo">
-                    Joel Zisholtz <i className="fas fa-laptop-code"></i>
+                <i class="devicon-devicon-plain"></i>
+                    Joel Zisholtz 
+
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-server'} />

@@ -38,29 +38,7 @@ function Skills() {
 
         </div>
       </div>
-   
-      <div className="skills-backend">
-      <div className="backend-header">
-        <h2>Back-End Development</h2>
-        </div>
-        <div className="backend-img-language">
-        <div class="backend-img">
-          <img src={backend} alt="back-end" />
-        </div>
-        <div className="backend-languages">
-          <i class="devicon-ruby-plain-wordmark colored">Ruby</i>
-          <i class="devicon-python-plain-wordmark colored">python</i>
-          <i class="devicon-rails-plain-wordmark colored">Rails</i>
-          <i class="devicon-django-plain-wordmark colored">django</i>
-          <i class="devicon-express-original-wordmark colored">express</i>
-          <i class="devicon-nodejs-plain-wordmark colored">nodeJS</i>
-          <i class="devicon-postgresql-plain-wordmark colored">PostgreSQL</i>
-          <i class="devicon-mongodb-plain-wordmark colored">mongoDB</i>
-          <i class="devicon-firebase-plain-wordmark colored">Firebase</i>
-          <i class="devicon-heroku-original-wordmark colored">heroku</i>
-        </div>
-      </div>
-      </div>
+
       <div className="skills-mobile">
       <div className="mobile-header">
       <h2>Mobile Development</h2>
@@ -73,13 +51,37 @@ function Skills() {
         <i class="devicon-react-original-wordmark colored">React Native</i>
           <i class="devicon-redux-original colored">Redux</i>
           <i class="devicon-javascript-plain colored">Javascript</i>
-          <i class="devicon-python-plain-wordmark colored">python</i>
           <i class="devicon-django-plain-wordmark colored">django</i>
           <i class="devicon-postgresql-plain-wordmark colored">PostgreSQL</i>
           <i class="devicon-firebase-plain-wordmark colored">Firebase</i>
+          <i class="devicon-amazonwebservices-original colored">AmazonWebServices</i>
         </div>
         </div>
       </div>
+   
+      <div className="skills-backend">
+      <div className="backend-header">
+        <h2>Back-End Development</h2>
+        </div>
+        <div className="backend-img-language">
+        <div class="backend-img">
+          <img src={backend} alt="back-end" />
+        </div>
+        <div className="backend-languages">
+          <i class="devicon-ruby-plain-wordmark colored">Ruby</i>
+          <i class="devicon-rails-plain-wordmark colored">Rails</i>
+          <i class="devicon-python-plain-wordmark colored">python</i>
+          <i class="devicon-django-plain-wordmark colored">django</i>
+          <i class="devicon-nodejs-plain-wordmark colored">nodeJS</i>
+          <i class="devicon-express-original-wordmark colored">express</i>
+          <i class="devicon-postgresql-plain-wordmark colored">PostgreSQL</i>
+          <i class="devicon-mongodb-plain-wordmark colored">mongoDB</i>
+          <i class="devicon-firebase-plain-wordmark colored">Firebase</i>
+          <i class="devicon-heroku-original-wordmark colored">heroku</i>
+        </div>
+      </div>
+      </div>
+      
 
       {/* </div> */}
     </>
