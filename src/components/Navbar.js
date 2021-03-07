@@ -23,6 +23,7 @@ const showButton = () => {
 
 const toggleHome = () => {
     scroll.scrollToTop();
+    setClick(false)
 }
 
 useEffect(() => {
@@ -31,6 +32,7 @@ useEffect(() => {
 
 const toggleProjects = () => {
     scroll.scrollTo(3700)
+    setClick(false)
 }
 
 window.addEventListener('resize', showButton);
@@ -64,12 +66,13 @@ window.addEventListener('resize', showButton);
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/contact' className='nav-links-mobile' onClick={closeMobileMenu}>
+                    <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
                         Contact
                     </Link>
+                    
                 </li>
                 </ul>
-                {button && <Button buttonStyle='btn--outline'>Contact</Button>}
+                {/* {button && <Button buttonStyle='btn--outline'>Contact</Button>} */}
               </div>
           </nav>
         </>

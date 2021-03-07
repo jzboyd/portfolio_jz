@@ -74,17 +74,18 @@ function MainSection() {
                 buttonSize='btn--large'
                 >Front-End</Button>
                 <Button 
-                onClick={toggleBackend}
-                className='btn' 
-                buttonStyle='btn--outline' 
-                buttonSize='btn--large'
-                >Back-End</Button>
-                <Button 
                 onClick={toggleMobile}
                 className='btn' 
                 buttonStyle='btn--outline' 
                 buttonSize='btn--large'
                 >Mobile</Button>
+                <Button 
+                onClick={toggleBackend}
+                className='btn' 
+                buttonStyle='btn--outline' 
+                buttonSize='btn--large'
+                >Back-End</Button>
+                
             </div>
          
            

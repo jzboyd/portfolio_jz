@@ -5,7 +5,8 @@ import './App.css';
 import Home from './components/pages/Home'
 import Resume from './components/pages/Resume'
 import Projects from './components/pages/Projects'
-import Contact from './components/pages/Contact'
+import Contact from './components/pages/Contact';
+
 
 function App() {
   return (
