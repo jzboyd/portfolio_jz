@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 import '../Contact.css';
 import emailjs from 'emailjs-com';
 import { useForm } from 'react-hook-form'
+import email from '../../images/Email.png'
 import { init, sendForm } from 'emailjs-com';
 init('user_J2qvlJay43uXxnGDwFxU2')
+
 
 
 const Contact = () => {
 const { register, handleSubmit, watch, errors } = useForm();
 const [statusMessage, setStatusMessage] = useState("Message");
 const [contactNumber, setContactNumber] = useState("000000");
-
 
 
 const generateContactNumber = () => {
@@ -21,32 +22,30 @@ const generateContactNumber = () => {
 const onSubmit = (data) => {
   const form = document.querySelector('#contact-form')
   const statusMsg = document.querySelector('.status-message')
-}
+
 
 generateContactNumber();
 
-// sendForm('service_iyjivmb', 'template_rdw5vx9', '#contact-form')
-//         .then((result) => {
-//             console.log(result.text);
-//         }, (error) => {
-//             console.log(error.text);
-//         });
-//         e.target.reset()
-//     }
-// function sendEmail(e) {
-//       e.preventDefault();
-
+sendForm('service_iyjivmb', 'template_rdw5vx9', '#contact-form')
+    .then( r => {
+    console.log('Success!', r.status, r.text);
+    form.reset();
+    setStatusMessage("Message sent!");
+    statusMsg.className = 'status-message success'
+    setTimeout(() => {
+      statusMsg.className = 'status-message'
+    }, 4000)
+  }, error => {
+    console.log('Failed...', error)
+    setStatusMessage('Failed to send message');
+    statusMsg.className = 'status-message fail';
+    setTimeout(() => {
+      statusMsg.className = 'status-message'
+    }, 4000)
+  })
 }
 
-  
-//       emailjs.sendForm('service_iyjivmb', 'template_rdw5vx9', e.target, 'user_J2qvlJay43uXxnGDwFxU2')
-//         .then((result) => {
-//             console.log(result.text);
-//         }, (error) => {
-//             console.log(error.text);
-//         });
-//         e.target.reset()
-//     }
+
 
 const message = watch('message') || "";
 const messageCharsLeft = 1500 - message.length;
@@ -54,6 +53,7 @@ const messageCharsLeft = 1500 - message.length;
     return (
       <>
       <h1>Contact</h1>
+      <img src={email} alt="email" />
        <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
         <input type="hidden" name="contact_number" value={contactNumber} />
        
@@ -64,7 +64,7 @@ const messageCharsLeft = 1500 - message.length;
         name="user_name" 
         placeholder='Name'
         maxLength='30'
-        aria-invalid={errors.user_name ? "true" : "false"}
+        aria-invalid={errors.name ? "true" : "false"}
         ref={register({ required: true})}
         /> 
         {/* <label>Email</label> */}
@@ -74,7 +74,7 @@ const messageCharsLeft = 1500 - message.length;
         name="user_email" 
         placeholder='E-mail'
         maxLength='30'
-        aria-invalid={errors.user_name ? "true" : "false"}
+        aria-invalid={errors.phone ? "true" : "false"}
         ref={register({ required: true})}
         />
         {/* <label>Phone</label> */}
@@ -95,13 +95,17 @@ const messageCharsLeft = 1500 - message.length;
         name="message" 
         placeholder='Message'
         maxLength='1500'
-        aria-invalid={errors.user_name ? "true" : "false"}
+        aria-invalid={errors.message ? "true" : "false"}
         ref={register({ required: true})}
         />
         <p className='message-chars-left'>{messageCharsLeft}</p>
         <br/>
+        <p className='status-message'>{statusMessage}</p>
         <input type="submit" value="Send" />
+       
       </form>
+         
+      
      </>
     );
   }

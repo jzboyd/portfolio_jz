@@ -13,11 +13,13 @@ form {
 input {
     height: 2.5em;
     width: 400px;
+    outline: 2px solid black;
 }
 
 textarea {
     height: 10em;
     width: 400px;
+    outline: 2px solid black;
 }
 
 div[role='alert'] {
@@ -29,4 +31,28 @@ div[role='alert'] {
     width: 400px;
     margin: auto;
     text-align: left;
+}
+
+.status-message {
+    opacity: 0;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.success {
+    opacity: 1;
+    color: rgb(6, 180, 6);
+}
+
+.fail {
+    opacity: 1;
+    color:rgb(255, 0, 0)
+}
+
+img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
