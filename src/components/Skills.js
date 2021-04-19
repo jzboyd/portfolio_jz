@@ -29,9 +29,12 @@ function Skills() {
             <i class="devicon-css3-plain-wordmark colored">CSS</i>
 
             <i class="devicon-react-original-wordmark colored">React</i>
-            <i class="devicon-redux-original colored">Redux</i>
 
+            <i class="devicon-redux-original colored">Redux</i>
+            <i class="devicon-graphql-plain-wordmark colored">GraphQL</i>
             <i class="devicon-jquery-plain-wordmark colored">jQUERY</i>
+            <i class="devicon-materialui-plain colored">MaterialUI</i>
+
             <i class="devicon-bootstrap-plain-wordmark colored">BOOTSTRAP</i>
             <i class="devicon-illustrator-plain colored">Adobe illustrator</i>
           </div>   
@@ -51,7 +54,6 @@ function Skills() {
         <i class="devicon-react-original-wordmark colored">React Native</i>
           <i class="devicon-redux-original colored">Redux</i>
           <i class="devicon-javascript-plain colored">Javascript</i>
-          <i class="devicon-django-plain-wordmark colored">django</i>
           <i class="devicon-postgresql-plain-wordmark colored">PostgreSQL</i>
           <i class="devicon-firebase-plain-wordmark colored">Firebase</i>
           <i class="devicon-amazonwebservices-original colored">AmazonWebServices</i>
@@ -70,8 +72,6 @@ function Skills() {
         <div className="backend-languages">
           <i class="devicon-ruby-plain-wordmark colored">Ruby</i>
           <i class="devicon-rails-plain-wordmark colored">Rails</i>
-          <i class="devicon-python-plain-wordmark colored">python</i>
-          <i class="devicon-django-plain-wordmark colored">django</i>
           <i class="devicon-nodejs-plain-wordmark colored">nodeJS</i>
           <i class="devicon-express-original-wordmark colored">express</i>
           <i class="devicon-postgresql-plain-wordmark colored">PostgreSQL</i>
